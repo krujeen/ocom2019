@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+  int x1,y1,x2,y2,d;
+  int T,i;
+
+scanf("%d",&T);
+int a[T];  
+
+  for(i=0;i<T;i++){
+  scanf("%d%d%d%d",&x1,&y1,&x2,&y2);
+  a[i]=sqrt(((x1-x2)*(x1-x2))+((y1-y2)*(y1-y2)));
+ }
+  for( i=0;i<T;i++){
+    printf("%d\n",a[i]);
+  }
+  return 0;
+}
